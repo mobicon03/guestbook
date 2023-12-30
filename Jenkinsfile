@@ -62,9 +62,8 @@ pipeline {
         stage('GB-Config Commit Check') {
             steps { 
                 input "commit??"
-                } 
             }
-		}
+	}
     
         stage('ArgoCD Sync') {
             environment {
