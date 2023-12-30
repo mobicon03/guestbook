@@ -54,7 +54,7 @@ pipeline {
                         sed -i "s/cicd_guestbook:.*/cicd_guestbook:${strDockerTag}/g" guestbook/guestbook_deploy.yaml
                         git add guestbook/guestbook_deploy.yaml
                         git commit -m "[UPDATE] guestbook image tag - ${strDockerImage} (by jenkins)"
-                        git push https://mobicon03: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@github.com/mobicon03/guestbook-config.git
+                        git push 'https://mobicon03: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@github.com/mobicon03/guestbook-config.git'
                     '''
                 }
             }
